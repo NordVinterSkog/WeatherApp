@@ -14,7 +14,7 @@ class App extends Component {
   };
 
   handleInput = e => {
-    let city = e.target.value.toUpperCase();
+    let city = e.target.value.toLowerCase();
 
     console.log(city);
     this.setState({
