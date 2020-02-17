@@ -1,11 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: white;
+  font-family: Raleway;
+  .intro {
+    color: rgb(0, 0, 54);
+    font-size: 10vh;
+    margin: 0;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: fadein 1s alternate infinite;
+    span {
+      font-size: 5vh;
+      padding: 0;
+      animation: fadein 2s alternate infinite;
+    }
+  }
   .app {
     height: 100vh;
     background-position: 0 0;
+    background-size: cover;
     animation: fadein 2s, scrolling 30s infinite alternate-reverse;
     .overlay {
       background-color: rgba(0, 0, 54, 0.6);
@@ -30,6 +50,8 @@ body {
         border-radius: 20%;
         border: none;
         background-color: transparent;
+        color: white;
+        font-family: Raleway;
       }
       button {
         width: 28%;
@@ -50,12 +72,18 @@ body {
       .temp {
         font-size: 10vh;
       }
-      i {
-        // font-size: 15vh;
-      }
+
       img {
         height: 5vh;
       }
+    }
+    .info {
+      position: fixed;
+      top: 10vh;
+      left: 50vw;
+      font-size: 4vh;
+      transform: translate(-50%, -50%);
+      animation: fadein 1s;
     }
   }
 }
@@ -93,5 +121,14 @@ body {
   }
   100% {
     background-position: 100% 0;
+  }
+}
+
+@keyframes ridein {
+  0% {
+    font-size: 0;
+  }
+  100% {
+    font-size: 8vh;
   }
 }

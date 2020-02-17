@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import WeatherInfo from "./WeatherInfo";
+import Intro from "./Intro";
 import "./App.css";
 
 class App extends Component {
   state = {
-    loaded: true,
+    loaded: false,
     language: "eng",
     city: "",
     country: "",
@@ -67,11 +68,15 @@ class App extends Component {
     });
   };
 
+  componentDidMount() {
+    setTimeout(() => this.setState({ loaded: true }), 2000);
+  }
+
   render() {
     console.log(this.state.results);
     console.log(this.state.country);
     let style = { backgroundImage: `url(${this.state.image})` };
-    return (
+    return this.state.loaded ? (
       <div className="app" style={style}>
         <div className="overlay"></div>
         <form action="submit">
@@ -89,8 +94,12 @@ class App extends Component {
             results={this.state.results}
             country={this.state.country}
           />
-        ) : null}
+        ) : (
+          <h1 className="info">Punch in a city!</h1>
+        )}
       </div>
+    ) : (
+      <Intro />
     );
   }
 }
