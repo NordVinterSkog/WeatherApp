@@ -25,7 +25,7 @@ class App extends Component {
   fetchCity = e => {
     e.preventDefault();
     fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${this.state.city}&appid=ea05aba774b348280020de52b353966f`
+      `https://api.openweathermap.org/data/2.5/weather?q=${this.state.city}&appid=ea05aba774b348280020de52b353966f`
     ).then(results => {
       if (results.status === 200) {
         return results
