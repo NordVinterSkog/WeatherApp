@@ -1,7 +1,2 @@
-img {
-  height: 3vh;
-}
-
-.app {
-  height: 100vh;
-}
+body{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;color:white}body .app{height:100vh;background-position:0 0;animation:fadein 2s, scrolling 30s infinite alternate-reverse}body .app .overlay{background-color:rgba(0,0,54,0.6);animation:vaporwave 10s infinite alternate-reverse;width:100vw;height:100vh}body .app form{background-color:transparent;position:fixed;top:20vh;left:50vw;width:75vw;height:10vh;-webkit-transform:translate(-50%, 0);transform:translate(-50%, 0);border-radius:10%;border:0.5vh solid white}body .app form input{height:100%;width:70%;font-size:5vh;border-radius:20%;border:none;background-color:transparent}body .app form button{width:28%;height:100%;font-size:5vh;background-color:transparent;border:none;color:white}body .app .results{position:absolute;-webkit-animation:fadein 2s;animation:fadein 2s;width:100vw;top:40vh;text-align:center;font-size:7vh}body .app .results .temp{font-size:10vh}body .app .results img{height:5vh}@-webkit-keyframes vaporwave{0%{background-color:rgba(0,0,0,0.8)}25%{background-color:rgba(0,0,100,0.8)}50%{background-color:rgba(50,0,54,0.8)}75%{background-color:rgba(50,0,100,0.8)}100%{background-color:rgba(0,0,54,0.8)}}@keyframes vaporwave{0%{background-color:rgba(0,0,0,0.8)}25%{background-color:rgba(0,0,100,0.8)}50%{background-color:rgba(50,0,54,0.8)}75%{background-color:rgba(50,0,100,0.8)}100%{background-color:rgba(0,0,54,0.8)}}@-webkit-keyframes fadein{0%{opacity:0}100%{opacity:1}}@keyframes fadein{0%{opacity:0}100%{opacity:1}}@-webkit-keyframes scrolling{0%{background-position:0 0}100%{background-position:100% 0}}@keyframes scrolling{0%{background-position:0 0}100%{background-position:100% 0}}
+/*# sourceMappingURL=App.css.map */
