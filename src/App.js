@@ -16,7 +16,6 @@ class App extends Component {
   handleInput = e => {
     let city = e.target.value.toLowerCase();
 
-    console.log(city);
     this.setState({
       city
     });
@@ -46,7 +45,6 @@ class App extends Component {
                 ).then(results => {
                   if (results.status === 200) {
                     return results.json().then(results => {
-                      console.log(results);
                       this.setState({
                         image:
                           results.hits[
@@ -73,8 +71,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.results);
-    console.log(this.state.country);
     let style = { backgroundImage: `url(${this.state.image})` };
     return this.state.loaded ? (
       <div className="app" style={style}>
